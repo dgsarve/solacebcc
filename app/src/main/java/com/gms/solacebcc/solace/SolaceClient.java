@@ -11,10 +11,10 @@ public   class SolaceClient {
         MqttClient mqttClient = null;
         try {
             MemoryPersistence persistence = new MemoryPersistence();
-            mqttClient = new MqttClient("ssl://mr-connection-eiw5cqm9ae9.messaging.solace.cloud:8883", "HelloWorldSub",persistence);
+            mqttClient = new MqttClient("ssl://mr-connection-d4w63mgopcx.messaging.solace.cloud:8883", "AvDevice",persistence);
             MqttConnectOptions connectionOptions = new MqttConnectOptions();
             connectionOptions.setUserName("solace-cloud-client");
-            connectionOptions.setPassword("9i6bg6dh2n1cvhs5jfii9pau9b".toCharArray());
+            connectionOptions.setPassword("8e1pta8855kpc5o5k7qksk54il".toCharArray());
             mqttClient.connect(connectionOptions);
         } catch (MqttException e) {
             e.printStackTrace();
